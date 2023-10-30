@@ -1,0 +1,6 @@
+main: dev.oflords.lordutils.LordUtils
+name: LordUtils
+load: STARTUP
+api-version: 1.19
+version: 1.0
+author: oflords
