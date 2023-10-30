@@ -1,5 +1,6 @@
 package dev.oflords.lordutils.player.team;
 
+import dev.oflords.lordutils.chat.CC;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.bukkit.ChatColor;
