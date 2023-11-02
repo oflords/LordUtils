@@ -11,14 +11,16 @@ import org.bukkit.util.Vector;
 
 public class PlayerStateUtil {
     public static void reset(Player player) {
-        reset(player, true);
+        reset(player, false, true);
     }
 
-    public static void reset(Player player, boolean resetHeldSlot) {
+    public static void reset(Player player, boolean death, boolean resetHeldSlot) {
         player.setWalkSpeed(0.2F);
         player.setFlySpeed(0.1F);
-        player.setMaxHealth(20.0D);
-        player.setHealth(player.getMaxHealth());
+        if (!death) {
+            player.setMaxHealth(20.0D);
+            player.setHealth(player.getMaxHealth());   
+        }
         player.setSaturation(20.0F);
         player.setFallDistance(0.0F);
         player.setFoodLevel(20);
